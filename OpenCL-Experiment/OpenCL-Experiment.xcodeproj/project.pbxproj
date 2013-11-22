@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		EED0B07A18400F9500C6CEA2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED0B07918400F9500C6CEA2 /* main.cpp */; };
 		EED0B07C18400F9500C6CEA2 /* OpenCL_Experiment.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EED0B07B18400F9500C6CEA2 /* OpenCL_Experiment.1 */; };
+		EED0B0831840100D00C6CEA2 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED0B0821840100D00C6CEA2 /* OpenCL.framework */; };
+		EED0B0851840101700C6CEA2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED0B0841840101700C6CEA2 /* OpenGL.framework */; };
+		EED0B08C1840104700C6CEA2 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED0B0881840104700C6CEA2 /* SDL2_image.framework */; };
+		EED0B08F1840104700C6CEA2 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED0B08B1840104700C6CEA2 /* SDL2.framework */; };
+		EED0B0911840115800C6CEA2 /* mykernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = EED0B0901840115800C6CEA2 /* mykernel.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +33,14 @@
 		EED0B07618400F9500C6CEA2 /* OpenCL-Experiment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenCL-Experiment"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED0B07918400F9500C6CEA2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EED0B07B18400F9500C6CEA2 /* OpenCL_Experiment.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenCL_Experiment.1; sourceTree = "<group>"; };
+		EED0B0821840100D00C6CEA2 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		EED0B0841840101700C6CEA2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EED0B0861840102B00C6CEA2 /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Frameworks; path = ../../../../Library/Frameworks; sourceTree = "<group>"; };
+		EED0B0881840104700C6CEA2 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		EED0B0891840104700C6CEA2 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		EED0B08A1840104700C6CEA2 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		EED0B08B1840104700C6CEA2 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		EED0B0901840115800C6CEA2 /* mykernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = mykernel.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +48,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED0B08C1840104700C6CEA2 /* SDL2_image.framework in Frameworks */,
+				EED0B08F1840104700C6CEA2 /* SDL2.framework in Frameworks */,
+				EED0B0851840101700C6CEA2 /* OpenGL.framework in Frameworks */,
+				EED0B0831840100D00C6CEA2 /* OpenCL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,13 @@
 		EED0B06D18400F9500C6CEA2 = {
 			isa = PBXGroup;
 			children = (
+				EED0B0881840104700C6CEA2 /* SDL2_image.framework */,
+				EED0B0891840104700C6CEA2 /* SDL2_mixer.framework */,
+				EED0B08A1840104700C6CEA2 /* SDL2_ttf.framework */,
+				EED0B08B1840104700C6CEA2 /* SDL2.framework */,
+				EED0B0861840102B00C6CEA2 /* Frameworks */,
+				EED0B0841840101700C6CEA2 /* OpenGL.framework */,
+				EED0B0821840100D00C6CEA2 /* OpenCL.framework */,
 				EED0B07818400F9500C6CEA2 /* OpenCL-Experiment */,
 				EED0B07718400F9500C6CEA2 /* Products */,
 			);
@@ -62,6 +86,7 @@
 			children = (
 				EED0B07918400F9500C6CEA2 /* main.cpp */,
 				EED0B07B18400F9500C6CEA2 /* OpenCL_Experiment.1 */,
+				EED0B0901840115800C6CEA2 /* mykernel.cl */,
 			);
 			path = "OpenCL-Experiment";
 			sourceTree = "<group>";
@@ -118,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED0B07A18400F9500C6CEA2 /* main.cpp in Sources */,
+				EED0B0911840115800C6CEA2 /* mykernel.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +221,10 @@
 		EED0B08018400F9500C6CEA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -202,6 +232,10 @@
 		EED0B08118400F9500C6CEA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
