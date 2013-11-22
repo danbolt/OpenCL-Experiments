@@ -1,0 +1,232 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EED0B07A18400F9500C6CEA2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED0B07918400F9500C6CEA2 /* main.cpp */; };
+		EED0B07C18400F9500C6CEA2 /* OpenCL_Experiment.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EED0B07B18400F9500C6CEA2 /* OpenCL_Experiment.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EED0B07418400F9500C6CEA2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				EED0B07C18400F9500C6CEA2 /* OpenCL_Experiment.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EED0B07618400F9500C6CEA2 /* OpenCL-Experiment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenCL-Experiment"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED0B07918400F9500C6CEA2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EED0B07B18400F9500C6CEA2 /* OpenCL_Experiment.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenCL_Experiment.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EED0B07318400F9500C6CEA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EED0B06D18400F9500C6CEA2 = {
+			isa = PBXGroup;
+			children = (
+				EED0B07818400F9500C6CEA2 /* OpenCL-Experiment */,
+				EED0B07718400F9500C6CEA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EED0B07718400F9500C6CEA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED0B07618400F9500C6CEA2 /* OpenCL-Experiment */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED0B07818400F9500C6CEA2 /* OpenCL-Experiment */ = {
+			isa = PBXGroup;
+			children = (
+				EED0B07918400F9500C6CEA2 /* main.cpp */,
+				EED0B07B18400F9500C6CEA2 /* OpenCL_Experiment.1 */,
+			);
+			path = "OpenCL-Experiment";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EED0B07518400F9500C6CEA2 /* OpenCL-Experiment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED0B07F18400F9500C6CEA2 /* Build configuration list for PBXNativeTarget "OpenCL-Experiment" */;
+			buildPhases = (
+				EED0B07218400F9500C6CEA2 /* Sources */,
+				EED0B07318400F9500C6CEA2 /* Frameworks */,
+				EED0B07418400F9500C6CEA2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCL-Experiment";
+			productName = "OpenCL-Experiment";
+			productReference = EED0B07618400F9500C6CEA2 /* OpenCL-Experiment */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EED0B06E18400F9500C6CEA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "FrostTree Games";
+			};
+			buildConfigurationList = EED0B07118400F9500C6CEA2 /* Build configuration list for PBXProject "OpenCL-Experiment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EED0B06D18400F9500C6CEA2;
+			productRefGroup = EED0B07718400F9500C6CEA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EED0B07518400F9500C6CEA2 /* OpenCL-Experiment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EED0B07218400F9500C6CEA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED0B07A18400F9500C6CEA2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EED0B07D18400F9500C6CEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EED0B07E18400F9500C6CEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EED0B08018400F9500C6CEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EED0B08118400F9500C6CEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EED0B07118400F9500C6CEA2 /* Build configuration list for PBXProject "OpenCL-Experiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED0B07D18400F9500C6CEA2 /* Debug */,
+				EED0B07E18400F9500C6CEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED0B07F18400F9500C6CEA2 /* Build configuration list for PBXNativeTarget "OpenCL-Experiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED0B08018400F9500C6CEA2 /* Debug */,
+				EED0B08118400F9500C6CEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EED0B06E18400F9500C6CEA2 /* Project object */;
+}
