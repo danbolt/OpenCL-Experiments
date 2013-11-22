@@ -6,9 +6,14 @@
 //  Copyright (c) 2013 FrostTree Games. All rights reserved.
 //
 
+// standard library(ies)
 #include <cstdio>
 
+// OpenCL Framework
 #include <OpenCL/OpenCL.h>
+
+// SDL libraries for window management
+#include <SDL2/SDL.h>
 
 //apparently xCode has generated this
 #include "mykernel.cl.h"
@@ -16,10 +21,55 @@
 //hard coding the number of values to test for convenience
 #define NUM_VALUES 1024
 
+// Application window tools
+SDL_Window* win = NULL;
+SDL_Renderer* ren = NULL;
+
+bool init()
+{
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
+    {
+        printf("SDL_Init Error: %s\n", SDL_GetError());
+        
+        return false;
+    }
+    
+    if ((win = SDL_CreateWindow("Hello World", 100, 100, 640, 480, SDL_WINDOW_SHOWN)) == NULL)
+    {
+        printf("SDL_CreateWindow Error: %s\n", SDL_GetError());
+        
+        return false;
+    }
+    
+    if ((ren = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC)) == NULL)
+    {
+        printf("SDL_CreateRenderer Error: %s\n", SDL_GetError());
+        
+        return false;
+    }
+    
+    return true;
+}
+
+void deinit()
+{
+    SDL_DestroyRenderer(ren);
+    SDL_DestroyWindow(win);
+    
+    SDL_Quit();
+}
+
 int main(int argc, const char * argv[])
 {
     int i;
     char deviceName[128];
+    
+    if (init() != true)
+    {
+        return 1;
+    }
+    
+    SDL_Delay(2000);
     
     // try to get the dispatch queue for the GPU
     dispatch_queue_t queue = gcl_create_dispatch_queue(CL_DEVICE_TYPE_GPU, NULL);
@@ -73,10 +123,11 @@ int main(int argc, const char * argv[])
     });
     
     // let's try printing the results
+    /*
     for (i = 0; i < NUM_VALUES; i++)
     {
         printf("%f : %f\n", test_in[i], test_out[i]);
-    }
+    }*/
     
     gcl_free(mem_in);
     gcl_free(mem_out);
@@ -85,6 +136,8 @@ int main(int argc, const char * argv[])
     free(test_out);
     
     dispatch_release(queue);
+    
+    deinit();
     
     return 0;
 }
